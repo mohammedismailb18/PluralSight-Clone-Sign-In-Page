@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #181818;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+#wrapper {
+  display: flex;
+}
+
+#left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#right {
+  flex: 1;
+}
+
+/** Sign In **/
+#sign-in {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+#sign-in .logo {
+  margin-bottom: 8vh;
+}
+
+#sign-in .logo img {
+  width: 250px;
+}
+
+#sign-in form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+#sign-in label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+
+#sign-in .input-text {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-color: #181818;
+  border: 2px solid #555;
+  border-radius: 2px;
+  padding: 0.5rem 0.4rem;
+  color: rgb(195, 192, 190);
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  background-color: rgb(252, 108, 56);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.primary-btn:hover {
+  background-color: rgb(255, 120, 70);
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.or {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+
+.or span {
+  padding: 0 0.6rem;
+}
+
+.secondary-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.or,
+#left .secondary-btn {
+  width: 60%;
+}
+
+.secondary-btn:hover {
+  color: rgb(252, 108, 56);
+  border-color: rgb(252, 108, 56);
+}
+
+.footer-main {
+  font-size: 0.8rem;
+  max-width: 80%;
+  padding-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links a {
+  color: rgb(252, 108, 56);
+}
+
+@media (min-width: 1200px) {
+  #left {
+    flex: 4;
+  }
+  #right {
+    flex: 6;
+  }
+}
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url("./images/background-img.jpg") no-repeat center center / cover;
+}
+
+.showcase-content .showcase-text {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.showcase-content .secondary-btn {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #right {
+    display: none;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #sign-in .logo {
+    margin-bottom: 4vh;
+  }
+
+  .footer-main {
+    padding-top: 2rem;
+  }
+}
